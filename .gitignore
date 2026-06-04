@@ -1,0 +1,8 @@
+# 민감 정보 (사업자등록증) — 공개 저장소 업로드 금지
+image.png
+
+# 무관한 로컬 파일
+skills-lock.json
+.agents/
+.DS_Store
+Thumbs.db
