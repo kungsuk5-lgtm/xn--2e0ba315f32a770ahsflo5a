@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://pangcare.kr/sitemap.xml
+Sitemap: https://xn-2e0ba315f32a770ahsflo5a.vercel.app/sitemap.xml
