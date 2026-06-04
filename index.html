@@ -10,6 +10,7 @@
 <meta name="keywords" content="구로하수구역류, 구로 하수구 역류, 구로 하수구막힘, 구로 배관청소, 구로 싱크대막힘, 구로 변기막힘, 구로 고압세척, 구로 관로탐지, 구로구 하수구, 24시 하수구 역류" />
 <meta name="robots" content="index, follow" />
 <meta name="author" content="원케어배관" />
+<meta name="naver-site-verification" content="5c2f29e44535193432eefede065fefc1dff6a532" />
 <link rel="canonical" href="https://xn-2e0ba315f32a770ahsflo5a.vercel.app/" />
 
 <!-- ============ Open Graph ============ -->
@@ -325,6 +326,15 @@
   .form-note{text-align:center;font-size:14px;color:var(--ink-2);margin-top:16px}
   .form-note a{font-family:var(--mono);color:var(--teal);font-weight:600}
   .form-ok{display:none;text-align:center;padding:28px;background:var(--teal-tint);border:1px solid var(--teal-line);color:var(--teal-deep);font-weight:600;margin-top:18px}
+  /* 전화 상담 카드 */
+  .call-card{max-width:640px;margin:0 auto;background:var(--paper);padding:50px 40px;text-align:center;color:var(--ink);box-shadow:var(--shadow);border-top:4px solid var(--amber)}
+  .call-lab{font-family:var(--mono);font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--teal);margin-bottom:16px}
+  .call-num{display:inline-flex;align-items:center;gap:14px;font-family:var(--mono);font-weight:600;font-size:clamp(30px,6vw,46px);letter-spacing:-.01em;color:var(--ink);margin-bottom:28px}
+  .call-num .ico{width:.82em;height:.82em;stroke:var(--teal);stroke-width:2}
+  .call-card .btn-amber{padding:17px 38px;font-size:17.5px}
+  .call-points{display:flex;flex-wrap:wrap;gap:12px 24px;justify-content:center;margin-top:30px;padding-top:26px;border-top:1px solid var(--hair)}
+  .call-points span{display:inline-flex;align-items:center;gap:8px;font-size:14.5px;color:var(--ink-2);font-weight:500}
+  .call-points .ico{width:18px;height:18px;stroke:var(--teal);stroke-width:1.9}
 
   /* 푸터 */
   footer.site{background:#081715;color:#8fb1ad;padding:64px 0 120px;font-size:14px;border-top:1px solid var(--teal-deep)}
@@ -434,7 +444,7 @@
     </nav>
     <div class="head-cta">
       <a class="head-tel" href="tel:010-9164-6943"><svg class="ico" viewBox="0 0 24 24"><use href="#i-phone"/></svg>010-9164-6943</a>
-      <a class="btn btn-amber" href="#contact">상담 신청</a>
+      <a class="btn btn-amber" href="tel:010-9164-6943">전화 상담</a>
       <button class="menu-toggle" id="menuToggle" aria-label="메뉴"><svg class="ico" viewBox="0 0 24 24"><use href="#i-menu"/></svg></button>
     </div>
   </div>
@@ -448,8 +458,8 @@
       <h1 class="up d2">구로 <em>하수구 역류</em>,<br>근본 원인까지<br>확실하게 잡습니다</h1>
       <p class="sub up d3">고압세척과 <b>관로탐지(CCTV)</b> 전문 <b>원케어배관</b>이 구로 어디든 달려갑니다. 역류·악취·반복 막힘, 임시방편이 아닌 재발 없는 완전 해결.</p>
       <div class="hero-cta up d4">
-        <a class="btn btn-amber btn-lg" href="#contact">무료 상담 신청 <svg class="ico" viewBox="0 0 24 24"><use href="#i-arrow"/></svg></a>
-        <a class="btn btn-line btn-lg" href="tel:010-9164-6943"><svg class="ico" viewBox="0 0 24 24"><use href="#i-phone"/></svg> 010-9164-6943</a>
+        <a class="btn btn-amber btn-lg" href="tel:010-9164-6943"><svg class="ico" viewBox="0 0 24 24"><use href="#i-phone"/></svg> 무료 전화 상담</a>
+        <a class="btn btn-line btn-lg" href="#gallery">작업 사례 보기 <svg class="ico" viewBox="0 0 24 24"><use href="#i-arrow"/></svg></a>
       </div>
       <div class="spec up d5">
         <div class="cell"><div class="k">Response</div><div class="v">24<small>시간 출동</small></div></div>
@@ -609,41 +619,23 @@
   </div>
 </section>
 
-<!-- ============ 상담 신청 ============ -->
+<!-- ============ 전화 상담 ============ -->
 <section class="contact" id="contact">
   <div class="wrap">
     <div class="sec-head reveal">
-      <span class="kicker center">Contact · 무료 상담</span>
-      <h2>구로 하수구 역류,<br><em>지금 바로 상담</em>하세요</h2>
-      <p>아래 정보를 남겨주시면 빠르게 연락드립니다. 급하시면 바로 전화 주세요.</p>
+      <span class="kicker center">Contact · 24시 전화 상담</span>
+      <h2>구로 하수구 역류,<br><em>지금 바로 전화</em> 주세요</h2>
+      <p>접수 즉시 가까운 기사가 출동합니다. 연중무휴 365일 24시간 상담 가능합니다.</p>
     </div>
-    <div class="form-card reveal">
-      <form id="consultForm" novalidate>
-        <div class="form-row">
-          <div class="field"><label>이름 <span class="req">*</span></label><input type="text" name="name" placeholder="홍길동" required /></div>
-          <div class="field"><label>연락처 <span class="req">*</span></label><input type="tel" name="phone" placeholder="010-0000-0000" required /></div>
-        </div>
-        <div class="form-row">
-          <div class="field"><label>지역 (구로구 내 동)</label><input type="text" name="area" placeholder="예) 구로동, 신도림동" /></div>
-          <div class="field"><label>증상</label>
-            <select name="issue">
-              <option value="하수구 역류">하수구 역류</option>
-              <option value="하수구 막힘">하수구 막힘</option>
-              <option value="싱크대 막힘">싱크대 막힘</option>
-              <option value="변기·화장실 막힘">변기·화장실 막힘</option>
-              <option value="배관 누수">배관 누수</option>
-              <option value="배관 공사·기타">배관 공사·기타</option>
-            </select>
-          </div>
-        </div>
-        <div class="field"><label>상세 내용</label>
-          <textarea name="message" placeholder="언제부터 어떤 증상이 있는지, 건물 형태(주택/상가/빌라 등)를 알려주시면 더 정확한 안내가 가능합니다."></textarea>
-        </div>
-        <label class="agree"><input type="checkbox" name="agree" required /><span>개인정보(이름·연락처)를 상담 목적으로 수집·이용하는 데 동의합니다. 정보는 상담 외 용도로 사용되지 않습니다.</span></label>
-        <button type="submit" class="btn btn-amber"><svg class="ico" viewBox="0 0 24 24"><use href="#i-send"/></svg> 무료 상담 신청하기</button>
-        <p class="form-note">또는 바로 전화 상담 <a href="tel:010-9164-6943">010-9164-6943</a> · 연중무휴 24시간</p>
-      </form>
-      <div class="form-ok" id="formOk">상담 신청이 접수되었습니다. 곧 연락드리겠습니다.</div>
+    <div class="call-card reveal">
+      <div class="call-lab">24H Emergency Call</div>
+      <a class="call-num" href="tel:010-9164-6943"><svg class="ico" viewBox="0 0 24 24"><use href="#i-phone"/></svg>010-9164-6943</a>
+      <a class="btn btn-amber btn-lg" href="tel:010-9164-6943"><svg class="ico" viewBox="0 0 24 24"><use href="#i-phone"/></svg> 전화 상담하기</a>
+      <div class="call-points">
+        <span><svg class="ico" viewBox="0 0 24 24"><use href="#i-check-c"/></svg> 연중무휴 365일 24시간</span>
+        <span><svg class="ico" viewBox="0 0 24 24"><use href="#i-check-c"/></svg> 구로구 전역 신속 출동</span>
+        <span><svg class="ico" viewBox="0 0 24 24"><use href="#i-check-c"/></svg> 작업 전 정찰 견적</span>
+      </div>
     </div>
   </div>
 </section>
@@ -668,7 +660,7 @@
       <div class="ft-cta">
         <div class="lab">24H Emergency</div>
         <a class="tel" href="tel:010-9164-6943"><svg class="ico" viewBox="0 0 24 24"><use href="#i-phone"/></svg>010-9164-6943</a>
-        <div style="margin-top:16px"><a class="btn btn-amber" href="#contact" style="font-size:15px">상담 신청하기</a></div>
+        <div style="margin-top:16px"><a class="btn btn-amber" href="tel:010-9164-6943" style="font-size:15px">전화 상담하기</a></div>
       </div>
     </div>
     <hr />
@@ -679,7 +671,7 @@
 <!-- ============ 모바일 하단바 ============ -->
 <div class="mobile-bar">
   <a class="m-tel" href="tel:010-9164-6943"><svg class="ico" viewBox="0 0 24 24"><use href="#i-phone"/></svg> 전화 상담</a>
-  <a class="m-form" href="#contact"><svg class="ico" viewBox="0 0 24 24"><use href="#i-send"/></svg> 상담 신청</a>
+  <a class="m-form" href="#contact"><svg class="ico" viewBox="0 0 24 24"><use href="#i-arrow"/></svg> 빠른 견적</a>
 </div>
 
 <script>
@@ -692,20 +684,6 @@
     es.forEach(e => { if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } });
   }, {threshold:.12});
   document.querySelectorAll('.reveal').forEach(el => io.observe(el));
-
-  // 상담 폼
-  const form = document.getElementById('consultForm');
-  const ok = document.getElementById('formOk');
-  form.addEventListener('submit', (e) => {
-    e.preventDefault();
-    const name = form.name.value.trim(), phone = form.phone.value.trim();
-    if(!name || !phone){ alert('이름과 연락처를 입력해 주세요.'); return; }
-    if(!form.agree.checked){ alert('개인정보 수집·이용에 동의해 주세요.'); return; }
-    /* ── 실제 접수 연동 위치 ── fetch('https://formspree.io/f/XXXX', {method:'POST', body:new FormData(form)}) */
-    console.log('상담신청', { name, phone, area: form.area.value.trim(), issue: form.issue.value, message: form.message.value.trim() });
-    form.style.display = 'none'; ok.style.display = 'block';
-    ok.scrollIntoView({behavior:'smooth', block:'center'});
-  });
 </script>
 </body>
 </html>
